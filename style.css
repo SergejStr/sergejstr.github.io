@@ -1,0 +1,132 @@
+    body {
+
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .header-wrapper {
+        display: flex;
+        flex-direction: column;
+        background-color: #1e1e1e;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        padding: 20px;
+    }
+
+    .container {
+        background-image: url(./image/iphone.jpg);
+        background-size: cover;
+
+    }
+
+    .footer {
+        background-color: rgba(#1e1e1e);
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu-bar {
+        border-radius: 25px;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        display: inline-flex;
+        background-color: rgba(#1e1e1e, 0.4);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        align-items: center;
+        padding: 0 10px;
+        margin: 50px 0 0 0;
+    }
+
+    .menu-bar li {
+        list-style: none;
+        color: white;
+        font-family: sans-serif;
+        font-weight: bold;
+        padding: 15px 40px;
+        margin: 0 10px;
+        position: relative;
+        cursor: pointer;
+        white-space: nowrap;
+        text-decoration: none;
+    }
+
+    .menu-bar li::before {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        transition: 0.2s;
+        border-radius: 25px;
+    }
+
+    .menu-bar li:hover {
+        color: black;
+    }
+
+    .menu-bar li:hover::before {
+        background: linear-gradient(to bottom, #e8edec, #d2d1d3);
+        box-shadow: 0px 3px 20px 0px black;
+        transform: scale(1.2);
+    }
+
+    .carusel {
+        width: 60%;
+        margin: 50px auto;
+
+    }
+
+    .video-block {
+        width: 60%;
+        margin: 100px auto;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .carusel img {
+        width: 100%;
+        aspect-ratio: 2;
+        object-fit: cover;
+
+    }
+
+    .video-block video,
+    .a15-video-block video {
+        width: 100%;
+        aspect-ratio: 2;
+        object-fit: cover;
+
+    }
+
+    .a15-wrapper {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+        margin: 50px auto;
+    }
+
+    .a15-video-block {
+        width: 60%;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .a15-context {
+        width: 30%;
+        border-radius: 15px;
+        overflow: hidden;
+        background-color: #fff;
+        border-radius: 15px;
+        overflow: hidden;
+    }
