@@ -1,0 +1,51 @@
+.carusel {
+    width: 750px;
+    margin: 0 auto;
+
+}
+
+button.slider-prev,
+button.slider-next {
+    background: none;
+    font-size: 60px;
+    color: wheat;
+    border: none;
+    
+
+}
+
+
+button:hover.slider-prev, button:hover.slider-next {
+    cursor: pointer;
+    color: gray;
+}
+/*
+button:active {
+    
+    color: #fff;
+}*/
+.slider {
+    width: 750px;
+    height: 400px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.slider-line {
+    width: 3000px;
+    height: 400px;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+
+.button-block {
+    text-align: center;
+}
+
+.slider-line img {
+    width: 750px;
+    object-fit: fill;
+}

@@ -1,0 +1,47 @@
+.store-menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.item-store-menu {
+    
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+    aspect-ratio: 1;
+
+}
+.item-store-menu .iphone{
+    width: 250px;
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+    
+
+}
+.item-store-menu div {
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+.container .store-menu {
+    padding-top: 50px;
+}
+.store-menu a:visited{
+    color: black;
+}
+
+.store-menu a:hover{
+    box-shadow: 0px 3px 20px 0px blueviolet;
+}
+.button-buy{
+    background-color: rgb(255, 0, 157);
+    border-radius: 5px;
+    border: hidden;
+    color: white;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+}
+.button-buy:hover{
+    cursor: pointer;
+}

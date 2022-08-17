@@ -1,0 +1,172 @@
+ .soc-net-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.icon {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 30px;
+    padding: 5px 0;
+    text-align: center;
+    margin: 10px 10px;
+}
+
+.icon-line {
+    position: absolute;
+    display: block;
+    transition-duration: 0.5s;
+}
+
+.icon-line-top {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+
+}
+
+.icon:hover .icon-line-top.facebook {
+    left: -100%;
+    background-color: rgb(75, 75, 238);
+}
+
+.icon:hover .icon-line-top.twitter {
+    left: -100%;
+    background-color: rgb(95, 168, 252);
+}
+
+.icon:hover .icon-line-top.instagram {
+    left: -100%;
+    background-color: rgb(228, 28, 178);
+}
+
+.icon:hover .icon-line-top.youtube {
+    left: -100%;
+    background-color: rgb(223, 25, 25);
+}
+
+.icon-line-bottom {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+
+}
+
+.icon:hover .icon-line-bottom.facebook {
+    right: -100%;
+    background-color: rgb(75, 75, 238);
+}
+
+.icon:hover .icon-line-bottom.twitter {
+    right: -100%;
+    background-color: rgb(95, 168, 252);
+}
+
+.icon:hover .icon-line-bottom.instagram {
+    right: -100%;
+    background-color: rgb(228, 28, 178);
+}
+
+.icon:hover .icon-line-bottom.youtube {
+    right: -100%;
+    background-color: rgb(223, 25, 25);
+}
+
+.icon-line-left {
+    bottom: 100%;
+    left: 0;
+    width: 0.5px;
+    height: 100%;
+    background-color: white;
+
+}
+
+.icon:hover .icon-line-left.facebook {
+    bottom: 0;
+    background-color: rgb(75, 75, 238);
+    width: 2px;
+}
+
+.icon:hover .icon-line-left.twitter {
+    bottom: 0;
+    background-color: rgb(95, 168, 252);
+    width: 2px;
+}
+
+.icon:hover .icon-line-left.instagram {
+    bottom: 0;
+    background-color: rgb(228, 28, 178);
+    width: 2px;
+}
+
+.icon:hover .icon-line-left.youtube {
+    bottom: 0;
+    background-color: rgb(223, 25, 25);
+    width: 2px;
+}
+
+.icon-line-right {
+    bottom: -100%;
+    right: 0;
+    width: 0.5px;
+    height: 100%;
+    background-color: white;
+
+}
+
+.icon:hover .icon-line-right.facebook {
+    bottom: 0;
+    background-color: rgb(75, 75, 238);
+    width: 2px;
+}
+
+.icon:hover .icon-line-right.twitter {
+    bottom: 0;
+    background-color: rgb(95, 168, 252);
+    width: 2px;
+}
+
+.icon:hover .icon-line-right.instagram {
+    bottom: 0;
+    background-color: rgb(228, 28, 178);
+    width: 2px;
+}
+
+.icon:hover .icon-line-right.youtube {
+    bottom: 0;
+    background-color: rgb(223, 25, 25);
+    width: 2px;
+}
+
+.icon:hover .fa.fa-facebook-f {
+    color: rgb(75, 75, 238);
+}
+
+.icon:hover .fa.fa-twitter {
+    color: rgb(95, 168, 252);
+}
+
+.icon:hover .fa.fa-instagram {
+    color: rgb(228, 28, 178);
+}
+
+.icon:hover .fa.fa-youtube {
+    color: rgb(223, 25, 25);
+}
+
+.fa.fa-facebook-f,
+.fa.fa-twitter,
+.fa.fa-instagram,
+.fa.fa-youtube {
+    font-size: 15px;
+    font-weight: bold;
+    transition-duration: 0.5s;
+    color: white;
+}

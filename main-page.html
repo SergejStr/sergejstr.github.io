@@ -6,15 +6,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <script src="https://use.fontawesome.com/c25a0d72c9.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 </head>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style-icon.css">
+<link rel="stylesheet" href="carusel.css">
 
 <body>
-    <div class="header-wrapper">
-        <div class="header"> SuperMega iStore</div>
-    </div>
-    <div class="container">
+    <div class="header">
+        <div class="header-wrapper">
+            <div class="soc-net-icon">
+                <div class="icon">
+                    <a href="https://www.facebook.com/apple/">
+                        <span class="icon-line icon-line-top facebook"></span>
+                        <span class="icon-line icon-line-right facebook"></span>
+                        <span class="icon-line icon-line-bottom facebook"></span>
+                        <span class="icon-line icon-line-left facebook"></span>
+                        <i class="fa fa-facebook-f"></i>
+                    </a>
+                </div>
+                <div class="icon">
+                    <span class="icon-line icon-line-top twitter"></span>
+                    <span class="icon-line icon-line-right twitter"></span>
+                    <span class="icon-line icon-line-bottom twitter"></span>
+                    <span class="icon-line icon-line-left twitter"></span>
+                    <i class="fa fa-twitter"></i>
+                </div>
+                <div class="icon">
+                    <a href="https://instagram.com/apple?igshid=YmMyMTA2M2Y=">
+                        <span class="icon-line icon-line-top instagram"></span>
+                        <span class="icon-line icon-line-right instagram"></span>
+                        <span class="icon-line icon-line-bottom instagram"></span>
+                        <span class="icon-line icon-line-left instagram"></span>
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="https://www.youtube.com/user/Apple/featured">
+                        <span class="icon-line icon-line-top youtube"></span>
+                        <span class="icon-line icon-line-right youtube"></span>
+                        <span class="icon-line icon-line-bottom youtube"></span>
+                        <span class="icon-line icon-line-left youtube"></span>
+                        <i class="fa fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="name-store">
+                <a href="./main-page.html" class="store">
+                    <i class="fa fa-apple"></i>
+                    SuperMega iStore
+                </a>
+            </div>
+            <ul class="lang-wrapper">
+                <li class="header-item-lang-en"><button id="en" class="translate"><img
+                            src="./image/uk-union-flag-126543.png" class="img-lang"></button></li>
+                <li class="header-item-lang-en"><button id="ru" class="translate"><img src="./image/флаг России.png"
+                            class="img-lang"></button></li>
+            </ul>
+        </div>
         <div class="menu">
             <ul class="menu-bar">
                 <a href="./main-page.html">
@@ -26,18 +77,85 @@
                 <a href="./macbook.html">
                     <li>MacBook</li>
                 </a>
-                <li>Apple Watch</li>
-                <li>AirPods</li>
-                <li>Контакты</li>
-
+                <a href="./ipad.html">
+                    <li>iPad</li>
+                </a>
+                <a href="./watch.html">
+                    <li>Apple Watch</li>
+                </a>
+                <a href="./airpods.html">
+                    <li>AirPods</li>
+                </a>
+                <a href="./store.html">
+                    <li>Магазин</li>
+                </a>
+                <a href="./contacts.html">
+                    <li>Контакты</li>
+                </a>
             </ul>
         </div>
+    </div>
+    <div class="container-main">
+        <button class="slider-prev"><i class="fa fa-chevron-left"></i></button>
+
+        
         <div class="carusel">
-            <a href="./macbook.html"><img src="./image/macbook.jpg"></a>
+            <div class="slider">
+                <div class="slider-line">
+                    <img src="./image/phone-carusel.jpg" alt="">
+                    <img src="./image/watch-carusel.jpg" alt="">
+                    <img src="./image/macbook-carusel.jpg" alt="">
+                    <img src="./image/ipod-carusel.jpg" alt="">
+                </div>
+            </div>
+          
+        </div>
+        <button class="slider-next"><i class="fa fa-chevron-right"></i></button>
+    </div>
+
+    <div class="footer">
+        <div class="icon-wrapper-footer">
+            <div class="">Social Network</div>
+            <div class="icon-footer">
+                <a href="https://www.facebook.com/apple/">
+                    <i class="fa fa-facebook-f"></i>
+                </a>
+            </div>
+            <div class="icon-footer">
+                <i class="fa fa-twitter"></i>
+            </div>
+            <div class="icon-footer">
+                <a href="https://instagram.com/apple?igshid=YmMyMTA2M2Y=">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </div>
+            <div class="icon-footer">
+                <a href="https://www.youtube.com/user/Apple/featured">
+                    <i class="fa fa-youtube"></i>
+                </a>
+            </div>
+            <div class=""></div>
+        </div>
+        <div class="contacts">
+            <div class="adress">
+                <div class="adress-title">Corporate Address</div>
+                <div class="adress-adress">
+                    <p>Apple</p>
+                    <p>One Apple Park Way</p>
+                    <p>Cupertino, CA 95014</p>
+                    <p>(408) 996–1010</p>
+                </div>
+            </div>
+            <div class="maps">
+                <a href="https://www.google.com/search?q=apple+cupertino+office&tbm=lcl&sxsrf=ALiCzsad9WpS_XRYrtreTj1ij_F9RblJiQ%3A1660491342660&ei=Thb5Ypn6J_CvrgS6oLKoDw&oq=apple+cupertino+office&gs_l=psy-ab.3.0.0i19k1l4j0i30i22i19k1l6.23380.25847.0.27682.7.7.0.0.0.0.282.902.0j3j2.5.0....0...1c.1.64.psy-ab..2.5.899...0i512k1j0i30i22k1j35i304i39k1j0i13k1j0i30i13k1j0i30i8i13i19k1.0.eTpRVA1B5rw#rlfi=hd:;si:;mv:[[37.3362145,-122.0026271],[37.3164371,-122.0540965]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:4"
+                    target="_blank">
+                    <i class="fa fa-globe item-maps"></i>
+                    <span class="item-maps">Maps</span>
+                </a>
+            </div>
         </div>
     </div>
-    
-    <div class="footer"></div>
+    <script src="script.js"></script>
 </body>
 
 </html>

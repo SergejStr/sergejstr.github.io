@@ -7,9 +7,22 @@
         text-decoration: none;
     }
 
-    .header-wrapper {
+    .header {
         display: flex;
         flex-direction: column;
+        background-color: #1e1e1e;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .header-wrapper {
+        display: flex;
+        background-color: #1e1e1e;
+        justify-content: space-around;
+    }
+
+    .name-store {
         background-color: #1e1e1e;
         text-align: center;
         color: white;
@@ -17,14 +30,115 @@
         padding: 20px;
     }
 
+    .store {
+        color: white;
+    }
+
+    .lang-wrapper {
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        list-style: none;
+    }
+
+    .translate {
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        margin-left: 15px;
+    }
+
+    .img-lang {
+        width: 30px;
+        height: 20px;
+        background-color: white;
+    }
+
     .container {
         background-image: url(./image/iphone.jpg);
         background-size: cover;
+        padding-top: 200px;
+        padding-bottom: 300px;
 
     }
 
+    .container-main {
+        background-image: url(./image/iphone.jpg);
+        background-size: cover;
+        padding-top: 200px;
+        padding-bottom: 300px;
+        display: flex;
+        
+    }
+
     .footer {
-        background-color: rgba(#1e1e1e);
+        width: 100%;
+        background-image: url(./image/footer-background.jpg);
+        margin-top: 0;
+        background-size: contain;
+        aspect-ratio: 4;
+        display: flex;
+        justify-content: space-between;
+        /* padding: 0 100px;*/
+    }
+
+    .icon-footer {
+        border: solid 1px white;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 30px;
+        padding: 5px 0;
+        text-align: center;
+        margin: 10px 10px;
+        position: relative;
+        display: inline-block;
+    }
+
+    .icon-footer:hover {
+        box-shadow: 0px 3px 20px 0px blueviolet;
+    }
+
+    .icon-wrapper-footer {
+        position: relative;
+        top: 50px;
+        left: 50px;
+        /*display: inline-block;*/
+        text-align: center;
+        color: white;
+    }
+
+    .maps {
+
+        top: 50px;
+        position: relative;
+        text-align: center;
+
+    }
+
+    .contacts {
+        top: 50px;
+        position: relative;
+        text-align: center;
+        right: 150px;
+    }
+
+    .item-maps {
+        font-size: 20px;
+        color: white;
+        width: 20px;
+        margin: 0 5px;
+        text-align: center;
+
+    }
+
+    .adress-title {
+        color: white;
+        font-size: 25px;
+    }
+
+    .adress-adress {
+        color: white;
+        font-size: 15px;
     }
 
     .menu {
@@ -34,16 +148,16 @@
 
     .menu-bar {
         border-radius: 25px;
-        height: -webkit-fit-content;
+        /* height: -webkit-fit-content;
         height: -moz-fit-content;
-        height: fit-content;
+        height: fit-content;*/
         display: inline-flex;
         background-color: rgba(#1e1e1e, 0.4);
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
         align-items: center;
         padding: 0 10px;
-        margin: 50px 0 0 0;
+        margin: 5px 0 0 0;
     }
 
     .menu-bar li {
@@ -51,7 +165,7 @@
         color: white;
         font-family: sans-serif;
         font-weight: bold;
-        padding: 15px 40px;
+        padding: 5px 40px;
         margin: 0 10px;
         position: relative;
         cursor: pointer;
@@ -77,56 +191,118 @@
 
     .menu-bar li:hover::before {
         background: linear-gradient(to bottom, #e8edec, #d2d1d3);
-        box-shadow: 0px 3px 20px 0px black;
+        box-shadow: 0px 3px 20px 0px blueviolet;
         transform: scale(1.2);
     }
 
-    .carusel {
-        width: 60%;
-        margin: 50px auto;
 
-    }
 
     .video-block {
         width: 60%;
-        margin: 100px auto;
+        margin: 50px auto;
         border-radius: 15px;
         overflow: hidden;
     }
 
-    .carusel img {
+
+
+    .video-block video {
         width: 100%;
         aspect-ratio: 2;
         object-fit: cover;
 
     }
 
-    .video-block video,
-    .a15-video-block video {
-        width: 100%;
-        aspect-ratio: 2;
-        object-fit: cover;
-
-    }
-
-    .a15-wrapper {
+    .a15-wrapper,
+    .ceramic-shield-wrapper,
+    .shot-macro-wrapper {
         display: flex;
         justify-content: space-around;
         width: 70%;
         margin: 50px auto;
+
     }
 
-    .a15-video-block {
+    .a15-video-block,
+    .shield-video-block {
         width: 60%;
         border-radius: 15px;
         overflow: hidden;
+        height: 400px;
+        object-fit: cover;
     }
+
+    .ipad-video-block {
+        width: 60%;
+        border-radius: 15px;
+        overflow: hidden;
+        height: 400px;
+        object-fit: fill;
+    }
+
+
 
     .a15-context {
         width: 30%;
         border-radius: 15px;
-        overflow: hidden;
         background-color: #fff;
         border-radius: 15px;
+        padding-left: 10px;
+        font-size: 50px;
+        font-weight: bold;
+        line-height: 0.2;
+    }
+
+    .a15-context p:first-child {
+        font-size: 15px;
+    }
+
+    .battery-life {
+
+        animation-name: example;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes example {
+        from {
+            color: black
+        }
+
+        to {
+            color: rgb(42, 252, 42);
+        }
+    }
+
+    .ceramic-shield {
+        width: 30%;
+        border-radius: 15px;
         overflow: hidden;
+        background-image: url(./image/Ceramic\ shield.png);
+        background-size: cover;
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        padding-left: 10px;
+
+    }
+
+    .shot-macro {
+        width: 30%;
+        border-radius: 15px;
+        overflow: hidden;
+        background-image: url(./image/Apple-Shot-macro.jpg);
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        padding-left: 10px;
+
+    }
+
+    .shot-macro-camera {
+        width: 60%;
+        background-image: url(./image/iphone_13.jpg);
+        border-radius: 15px;
+        overflow: hidden;
+        aspect-ratio: 2;
     }
