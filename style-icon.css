@@ -145,7 +145,7 @@
     width: 2px;
 }
 
-.icon:hover .fa.fa-facebook-f {
+.icon:hover .fa.fa-facebook {
     color: rgb(75, 75, 238);
 }
 
@@ -161,7 +161,7 @@
     color: rgb(223, 25, 25);
 }
 
-.fa.fa-facebook-f,
+.fa.fa-facebook,
 .fa.fa-twitter,
 .fa.fa-instagram,
 .fa.fa-youtube {

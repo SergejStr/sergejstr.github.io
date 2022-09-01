@@ -12,7 +12,36 @@
 <link rel="stylesheet" href="style-icon.css">
 <link rel="stylesheet" href="store.css">
 <link rel="stylesheet" href="carusel.css">
+
 <body>
+    <div class="dialog-container shown">
+        <div class="dialog">
+            
+            <div class="actions">
+                В данном разделе для приобретения продукции потребуется ввести данные платежной карточки.
+            </div>
+            <img src="./image/CreditCard.jpeg">
+        </div>
+        <div class="backdrop" onclick="closeDialog()"></div>
+    </div>
+    <div id="sidebar">
+        <div class="toggle-btn" onclick="openMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li>Меню сайта</li>
+            <li><a href="./main-page.html">Главная</a></li>
+            <li><a href="./iphone.html">iPhone</a></li>
+            <li><a href="./macbook.html">MacBook</a></li>
+            <li><a href="./ipad.html">iPad</a></li>
+            <li><a href="./watch.html">Apple Watch</a></li>
+            <li><a href="./airpods.html">AirPods</a></li>
+            <li><a href="./store.html">Магазин</a></li>
+            <li><a href="./contacts.html">Контакты</a></li>
+        </ul>
+    </div>
     <div class="header">
         <div class="header-wrapper">
             <div class="soc-net-icon">
@@ -22,7 +51,7 @@
                         <span class="icon-line icon-line-right facebook"></span>
                         <span class="icon-line icon-line-bottom facebook"></span>
                         <span class="icon-line icon-line-left facebook"></span>
-                        <i class="fa fa-facebook-f"></i>
+                        <i class="fa fa-facebook"></i>
                     </a>
                 </div>
                 <div class="icon">
@@ -52,22 +81,24 @@
                 </div>
             </div>
             <div class="name-store">
-                <a href="./main-page.html" class="store">
+                <a href="./main-page.html" class="store" >
                     <i class="fa fa-apple"></i>
-                    SuperMega iStore
+                    <p id="namestore">СуперМега iМагазин</p>
                 </a>
             </div>
             <ul class="lang-wrapper">
-                <li class="header-item-lang-en"><button id="en" class="translate"><img
+                <li class="header-item-lang-en"><button id="en" class="translate" onclick="
+                    changeLang(en)"><img
                             src="./image/uk-union-flag-126543.png" class="img-lang"></button></li>
-                <li class="header-item-lang-en"><button id="ru" class="translate"><img src="./image/флаг России.png"
+                <li class="header-item-lang-en"><button id="ru" class="translate" onclick="
+                    changeLang(ru)"><img src="./image/флаг России.png"
                             class="img-lang"></button></li>
             </ul>
         </div>
         <div class="menu">
             <ul class="menu-bar">
                 <a href="./main-page.html">
-                    <li>Главная</li>
+                    <li id="home">Главная</li>
                 </a>
                 <a href="./iphone.html">
                     <li>iPhone</li>
@@ -85,10 +116,10 @@
                     <li>AirPods</li>
                 </a>
                 <a href="./store.html">
-                    <li>Магазин</li>
+                    <li id="store">Магазин</li>
                 </a>
                 <a href="./contacts.html">
-                    <li>Контакты</li>
+                    <li id="contact">Контакты</li>
                 </a>
             </ul>
         </div>
@@ -101,6 +132,7 @@
                     <div>Mac</div>
                 </div>
             </a>
+
             <a href="./store-iphone.html">
                 <div class="item-store-menu">
 
@@ -118,9 +150,9 @@
                 </div>
             </a>
             <a href="./store-airpods.html">
-                <div class="item-store-menu">                  
-                        <img src="./image/store-airpods.png">
-                        <div>AirPods</div>
+                <div class="item-store-menu">
+                    <img src="./image/store-airpods.png">
+                    <div>AirPods</div>
                 </div>
             </a>
         </div>
@@ -132,7 +164,7 @@
             <div class="">Social Network</div>
             <div class="icon-footer">
                 <a href="https://www.facebook.com/apple/">
-                    <i class="fa fa-facebook-f"></i>
+                    <i class="fa fa-facebook"></i>
                 </a>
             </div>
             <div class="icon-footer">
@@ -160,6 +192,7 @@
                     <p>(408) 996–1010</p>
                 </div>
             </div>
+
             <div class="maps">
                 <a href="https://www.google.com/search?q=apple+cupertino+office&tbm=lcl&sxsrf=ALiCzsad9WpS_XRYrtreTj1ij_F9RblJiQ%3A1660491342660&ei=Thb5Ypn6J_CvrgS6oLKoDw&oq=apple+cupertino+office&gs_l=psy-ab.3.0.0i19k1l4j0i30i22i19k1l6.23380.25847.0.27682.7.7.0.0.0.0.282.902.0j3j2.5.0....0...1c.1.64.psy-ab..2.5.899...0i512k1j0i30i22k1j35i304i39k1j0i13k1j0i30i13k1j0i30i8i13i19k1.0.eTpRVA1B5rw#rlfi=hd:;si:;mv:[[37.3362145,-122.0026271],[37.3164371,-122.0540965]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:4"
                     target="_blank">
@@ -169,6 +202,9 @@
             </div>
         </div>
     </div>
+    <script src="script-pop.js"></script>
+    <script src="script.js"></script>
+    <script src="lang.js"></script>
 </body>
 
 </html>
