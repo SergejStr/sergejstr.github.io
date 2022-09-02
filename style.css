@@ -1,6 +1,7 @@
     body {
 
         margin: 0;
+        padding: 0;
     }
 
     a {
@@ -330,12 +331,12 @@
     }
 
     .dialog-container.shown .dialog {
-        animation: scale-shown 200ms ease-in;
+        animation: scale-shown 300ms ease-in;
 
     }
 
     .dialog-container.shown .backdrop {
-        animation: opacity-shown 200ms ease-in;
+        animation: opacity-shown 300ms ease-in;
 
     }
 
@@ -361,8 +362,8 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background: rgba(0, 0, 0, 0.15);
-        z-index: 2;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: -1;
     }
 
     .actions {
@@ -446,4 +447,8 @@
         height: 4px;
         background-color: #666;
         margin: 4px 0;
+    }
+    img.curs{
+        width: 350px;
+        padding-bottom: 50px;
     }
